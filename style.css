@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  overflow-x: hidden;
+  background-color: #333;
+  color: #222;
+}
+.container {
+  background-color: #fafafa;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 30px;
+}
+.container.rotate {
+  transform: rotate(-20deg);
+}
+
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+.circle {
+  background-color: #ff797979;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
