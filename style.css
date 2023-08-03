@@ -34,4 +34,30 @@ body {
   height: 200px;
   width: 200px;
   border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.circle button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background-color: transparent;
+  border: 0;
+  font-size: 25px;
+  color: #fff;
+}
+#open {
+  left: 60%;
+}
+#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+img {
+  max-width: 100%;
 }
